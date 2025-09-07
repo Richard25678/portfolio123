@@ -1,0 +1,148 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richard | Web Developer</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 transition-colors duration-500" id="page">
+
+  <!-- Navbar -->
+  <nav class="bg-indigo-900 text-white py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+    <h1 class="text-xl font-bold">Richard.dev</h1>
+    <div class="flex gap-4 items-center">
+      <a href="#about" class="hover:text-gray-300">About</a>
+      <a href="#skills" class="hover:text-gray-300">Skills</a>
+      <a href="#projects" class="hover:text-gray-300">Projects</a>
+      <a href="#contact" class="hover:text-gray-300">Contact</a>
+      <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 bg-white text-indigo-900 rounded-full shadow hover:bg-gray-200 transition" id="darkBtn">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background -->
+  <header class="relative text-white text-center">
+    <!-- Background image -->
+    <div class="absolute inset-0 bg-cover bg-center" 
+         style="background-image:url('123.jpg'); filter: brightness(0.5);"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+
+    <div class="relative py-20">
+      <!-- Profile Image -->
+      <img src="123.jpg"
+           alt="Richard"
+           class="w-40 h-40 rounded-full mx-auto shadow-lg border-4 border-white"
+           data-aos="zoom-in">
+      <h1 class="text-4xl font-bold mt-4" data-aos="fade-up">Muwonge Richard</h1>
+      <p class="mt-2 text-lg" data-aos="fade-up" data-aos-delay="200">Web Developer | Front-End & Back-End</p>
+      <div class="mt-4 flex justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
+        <a href="#contact" class="bg-white text-indigo-900 px-5 py-2 rounded-full shadow hover:bg-gray-200 transition">Hire Me</a>
+        <a href="#projects" class="border border-white px-5 py-2 rounded-full hover:bg-white hover:text-indigo-900 transition">View Work</a>
+        <a href="cv.pdf" download class="bg-yellow-400 text-black px-5 py-2 rounded-full shadow hover:bg-yellow-500 transition">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-16" data-aos="fade-right">
+    <h2 class="text-3xl font-bold border-b-4 border-indigo-900 inline-block mb-6">About Me</h2>
+    <p class="text-lg leading-relaxed">Hello! I’m <strong>Muwonge Richard</strong>, a passionate web developer from Uganda. I create modern, responsive, and user-friendly websites. My mission is to bring ideas to life with clean code, animations, and creative design.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 py-16" data-aos="fade-left">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold border-b-4 border-indigo-900 inline-block mb-6">Skills</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">HTML5, CSS3, JavaScript</div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">React.js, Tailwind CSS</div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">Node.js, PHP, Python</div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">MySQL, MongoDB</div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">WordPress, Shopify</div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">Git/GitHub, Figma</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold border-b-4 border-indigo-900 inline-block mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transition" data-aos="zoom-in">
+        <img src="111.jpg" alt="Project 1" class="rounded-t-xl">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Enhance Humanity Uganda</h3>
+          <p class="text-gray-600">NGO website with donation integration, responsive design, and modern UI.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transition" data-aos="zoom-in" data-aos-delay="200">
+        <img src="222.jpg" alt="Project 2" class="rounded-t-xl">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Kintu Dalusi Gym</h3>
+          <p class="text-gray-600">Business website with location details, WhatsApp contact, and services offered.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transition" data-aos="zoom-in" data-aos-delay="400">
+        <img src="555.jpg" alt="Project 3" class="rounded-t-xl">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Prizza E-commerce Store</h3>
+          <p class="text-gray-600">Full e-commerce website with product catalog, shopping cart, and checkout system.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transition" data-aos="zoom-in" data-aos-delay="600">
+        <img src="666.webp" alt="Project 4" class="rounded-t-xl">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Fun Browser Games</h3>
+          <p class="text-gray-600">Interactive games (Snake, Racing, etc.) built with HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-indigo-900 text-white py-16" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p>Email: <a href="mailto:rmuwonge054@gmail.com" class="underline">rmuwonge054@gmail.com</a></p>
+      <p>WhatsApp: +256 780 227088</p>
+      <p>Location: Jinja, Uganda</p>
+      <div class="mt-4 flex justify-center gap-6">
+        <a href="#" target="_blank" class="hover:text-gray-300">🐙 GitHub</a>
+        <a href="#" target="_blank" class="hover:text-gray-300">💼 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-4">
+    <p>&copy; 2025 Richard Muwonge | Web Developer</p>
+  </footer>
+
+  <script>
+    AOS.init();
+    function toggleDarkMode() {
+      const page = document.getElementById('page');
+      const btn = document.getElementById('darkBtn');
+      if (page.classList.contains('bg-gray-50')) {
+        page.classList.remove('bg-gray-50', 'text-gray-800');
+        page.classList.add('bg-gray-900', 'text-gray-100');
+        btn.textContent = '☀️';
+      } else {
+        page.classList.remove('bg-gray-900', 'text-gray-100');
+        page.classList.add('bg-gray-50', 'text-gray-800');
+        btn.textContent = '🌙';
+      }
+    }
+  </script>
+</body>
+</html>
